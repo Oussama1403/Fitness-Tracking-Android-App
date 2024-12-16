@@ -56,9 +56,9 @@ A simple native Android application for basic fitness tracking, featuring authen
 ## Screenshots
 
 <div style="display: flex; gap: 10px;">
-    <img src="screenshots/register-view.jpg" alt="Log Activity Overview" style="width: 30%;"/>
-    <img src="Screenshots/data-entry-view.jpg" alt="Log Custom Activity Overview" style="width: 30%;"/>
-    <img src="Screenshots/dashboard-view.jpg" alt="Log Custom Activity Overview" style="width: 30%;"/>
+    <img src="screenshots/register-view.jpg" alt="Register View" style="width: 30%;"/>
+    <img src="screenshots/data-entry-view.jpg" alt="Data Entry View" style="width: 30%;"/>
+    <img src="screenshots/dashboard-view.jpg" alt="Dashboard view" style="width: 30%;"/>
 </div>
 
 ---
