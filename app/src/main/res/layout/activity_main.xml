@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- TextView to display Weight -->
+    <TextView
+        android:id="@+id/msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You have not entered any data yet"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp" />
+
+    <!-- ListView to display the recent data -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:clipToPadding="false"
+        android:scrollbars="vertical" />
+
+    <!-- Button to add data -->
+    <Button
+        android:id="@+id/addDataButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Data"
+        android:background="@drawable/button_background"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp" />
+</RelativeLayout>

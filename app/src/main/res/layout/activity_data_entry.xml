@@ -1,0 +1,144 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F9F9F9">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fitness Tracker"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#3E4A59"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="24dp" />
+
+        <!-- CardView for grouped input fields -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/inputCardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titleTextView"
+            android:layout_marginTop="16dp"
+            android:background="#FFFFFF"
+            android:padding="16dp"
+            android:layout_marginBottom="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:showDividers="middle">
+
+                <!-- Weight -->
+                <EditText
+                    android:id="@+id/weightEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter your weight (kg)"
+                    android:inputType="numberDecimal"
+                    android:padding="12dp"
+                    android:background="@drawable/edit_text_background" />
+
+                <!-- Steps -->
+                <EditText
+                    android:id="@+id/stepsEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter your steps"
+                    android:inputType="number"
+                    android:padding="12dp"
+                    android:background="@drawable/edit_text_background" />
+
+                <!-- Calories -->
+                <EditText
+                    android:id="@+id/caloriesEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter calories burned"
+                    android:inputType="number"
+                    android:padding="12dp"
+                    android:background="@drawable/edit_text_background" />
+
+                <!-- Exercise Type -->
+                <Spinner
+                    android:id="@+id/exerciseTypeSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:background="@drawable/spinner_background"
+                    android:layout_marginTop="8dp" />
+
+                <!-- Exercise Duration -->
+                <EditText
+                    android:id="@+id/exerciseDurationEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter exercise duration (minutes)"
+                    android:inputType="number"
+                    android:padding="12dp"
+                    android:background="@drawable/edit_text_background" />
+
+                <!-- Distance Covered -->
+                <EditText
+                    android:id="@+id/distanceCoveredEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter distance covered (km)"
+                    android:inputType="numberDecimal"
+                    android:padding="12dp"
+                    android:background="@drawable/edit_text_background" />
+
+                <!-- Calories Consumed -->
+                <EditText
+                    android:id="@+id/caloriesConsumedEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter calories consumed"
+                    android:inputType="number"
+                    android:padding="12dp"
+                    android:background="@drawable/edit_text_background" />
+
+                <!-- Exercise Notes -->
+                <EditText
+                    android:id="@+id/exerciseNotesEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter exercise notes"
+                    android:inputType="textMultiLine"
+                    android:padding="12dp"
+                    android:background="@drawable/edit_text_background"
+                    android:gravity="top|start" />
+
+                <!-- Goal Setting -->
+                <EditText
+                    android:id="@+id/goalEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Set exercise goal (minutes or calories)"
+                    android:inputType="text"
+                    android:padding="12dp"
+                    android:background="@drawable/edit_text_background" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:background="@drawable/button_background"
+            android:textColor="#FFFFFF"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/inputCardView"
+            android:layout_marginTop="20dp" />
+    </RelativeLayout>
+</ScrollView>
